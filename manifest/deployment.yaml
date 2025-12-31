@@ -27,9 +27,10 @@ metadata:
   name: playground
   namespace: dev
 spec:
+  type: NodePort
   selector:
     app: playground
   ports:
   - port: 80
     targetPort: 80
-    NodePort: 30080
+    nodePort: 30080
